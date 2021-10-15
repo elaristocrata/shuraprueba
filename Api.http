@@ -1,0 +1,19 @@
+DELETE http://localhost:8080/api/producto
+Content-Type: application/x-www-form-urlencoded
+
+id=292
+
+###
+POST http://localhost:8080/api/producto
+Content-Type: application/json
+
+{
+  "nombre": "Llanta",
+  "precio": 300.45,
+  "cantAlmacen": 1000,
+  "fechaCaducidad": "2021-10-15"
+}
+
+###
+GET http://localhost:8080/api/productos
+Content-Type: application/json
